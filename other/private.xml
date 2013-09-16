@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+ This file needs to go to ~/Library/Application Support/KeyRemap4MacBook/private.xml
+ but install KeyRemap4MacBook first.
+-->
+<root>
+ <item>
+  <name>das keyboard Menu to Fn</na>
+  <identifier>private.das_keyboard_menu_to_fn</identifier>
+  <autogen>--KeyToKey-- KeyCode::PC_APPLICATION, KeyCode::FN</autogen>
+ </item>
+</root>
