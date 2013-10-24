@@ -66,8 +66,8 @@
   <!--
       Remap Rshift+Space to ') ', because when typing an end paren and
       then a space I tend to hit space before I let go of rshift.
-  -->
   <autogen>--KeyToKey-- KeyCode::SPACE, ModifierFlag::SHIFT_R, KeyCode::KEY_0, ModifierFlag::SHIFT_L, KeyCode::SPACE</autogen>
+  -->
 </item>
 </root>
 
