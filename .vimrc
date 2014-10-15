@@ -95,27 +95,10 @@ if has("autocmd")
 	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
 endif
 
-" from:
-" http://stackoverflow.com/questions/65076/how-to-setup-vim-autoindentation-properly-for-editing-python-files-py
-" configure expanding of tabs for various file types
-au BufRead,BufNewFile *.py set expandtab
-au BufRead,BufNewFile *.c set noexpandtab
-au BufRead,BufNewFile *.h set noexpandtab
-au BufRead,BufNewFile Makefile* set noexpandtab
+" activate the indent plugin in the ~/.vim/indent directory
+" http://henry.precheur.org/vim/python
+" http://www.vim.org/scripts/script.php?script_id=974
+filetype plugin indent on
 
-" --------------------------------------------------------------------------------
-" configure editor with tabs and nice stuff...
-" --------------------------------------------------------------------------------
-set expandtab           " enter spaces when tab is pressed
-"set textwidth=120       " break lines when line length increases
-set tabstop=4           " use 4 spaces to represent tab
-set softtabstop=4
-set shiftwidth=4        " number of spaces to use for auto indent
-set autoindent          " copy indent from current line when starting a new line
-
-" make backspaces more powerfull
-set backspace=indent,eol,start
-
-set ruler               " show line and column number
-syntax on   		" syntax highlighting
-set showcmd 		" show (partial) command in status line
+" I work on a dark background
+set background=dark
