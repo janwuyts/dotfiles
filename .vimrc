@@ -102,3 +102,19 @@ filetype plugin indent on
 
 " I work on a dark background
 set background=dark
+
+" turn on syntax highlighting
+syntax on
+
+" tab settings for various filetypes
+autocmd FileType * set tabstop=8|set shiftwidth=8|set noexpandtab
+autocmd FileType markdown set tabstop=4|set shiftwidth=4|set expandtab|set softtabstop=4
+autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab|set softtabstop=4
+autocmd FileType mako set tabstop=4|set shiftwidth=4|set expandtab|set softtabstop=4
+autocmd FileType r set tabstop=2|set shiftwidth=2|set expandtab|set softtabstop=2
+autocmd FileType jade set tabstop=2|set shiftwidth=2|set expandtab|set softtabstop=2
+autocmd FileType javascript set tabstop=4|set shiftwidth=4|set expandtab|set softtabstop=4
+autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
+au BufNewFile,BufRead *.mako set ft=mako
+au BufNewFile,BufRead *.markdown set ft=markdown
+au BufNewFile,BufRead *.md set ft=markdown
