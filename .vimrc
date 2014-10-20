@@ -103,9 +103,6 @@ filetype plugin indent on
 " I work on a dark background
 set background=dark
 
-" turn on syntax highlighting
-syntax on
-
 " tab settings for various filetypes
 autocmd FileType * set tabstop=8|set shiftwidth=8|set noexpandtab
 autocmd FileType markdown set tabstop=4|set shiftwidth=4|set expandtab|set softtabstop=4
